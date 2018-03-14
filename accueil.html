@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css">
+	<title>Mon site web</title>
+	<meta name="mon site" content="c'est mon premier site web fait avec doranco"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+</head>
+<body>
+						<!--l'en-tête-->
+	<header>
+			<img id="logo" src="html 5.png">
+			<img id="logo_css" src="css.png">
+			<nav>
+		 <ul id="ancre">
+			<li class="html"><a href="#html">html 5</a></li>
+			<li class="css"><a href="#CSS">CSS 3</a></li>
+		</ul>
+			</nav>
+		
+	</header>
+						<!--section-->
+	<section id="corp">
+						<!--article-->
+	<article class="text">
+	<h1>html 5 & CSS 3</h1>
+		<h2 id="html">Html 5</h2>
+	<p>Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.
+Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles<et>, comme ceci :<balise>
+
+À quoi est-ce qu'elles servent ? Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple : « Ceci est le titre de la page », « Ceci est une image », « Ceci est un paragraphe de texte », etc.
+
+On distingue deux types de balises : les balises en paires et les balises orphelines.</p>
+
+			<h3>Les listes</h3>
+				<ol type="A">les listes ordonées
+		 			<li>liste 1</li>
+		 			<li>liste 2</li>
+					<li>liste 3</li>
+				</ol>
+	   			 <ul>les listes non ordonées
+         			 <li>liste 1</li>
+          			 <li>liste 2</li>
+         			 <li>liste 3</li>
+        		</ul>
+			<h3>Liste de définition</h3>
+			    <dl>
+			    	<dt>HTML</dt>
+			    	<dd>Hyper Text Markup Language</dd>
+			    </dl>
+			    <h3>les tableaux</h3>
+
+			    	<table>
+			    		<th>Nom</th>
+			    		<th>Prenom</th>
+			    		<th>Age</th>
+			    		<tr>
+			    			<td>Boussaid</td>
+			    			<td>Souheil</td>
+			    			<td>33 ans</td>
+			    		</tr>
+			    		<tr>
+			    			<td>Aissyine</td>
+			    			<td>Hamida</td>
+			    			<td>30 ans</td>
+			    		</tr>
+			    		<tr>
+			    			<td>Boussaid</td>
+			    			<td>Youssef</td>
+			    			<td>5 mois</td>
+			    		</tr>
+			    	</table>
+			    <h2 id="CSS">CSS 3</h2>	
+			       <p>
+			    	CSS ? C'est lui qui vous permet de choisir la couleur de votre texte.
+Lui qui vous permet de sélectionner la police utilisée sur votre site.
+Lui encore qui permet de définir la taille du texte, les bordures, le fond…
+
+Et aussi, c'est lui qui permet de faire la mise en page de votre site. Vous pourrez dire : je veux que mon menu soit à gauche et occupe telle largeur, que l'en-tête de mon site soit calé en haut et qu'il soit toujours visible, etc Grâce au HTML, nous avons pu rédiger le contenu de notre site mais il est brut de décoffrage. Le CSS vient compléter ce code pour mettre en forme tout cela et donner au contenu l'apparence que l'on souhaite.<br/>
+
+aut savoir qu'aux débuts du Web, CSS n'existait pas. En fait, il n'y avait initialement que le langage HTML.
+Le HTML est né en 1991 et CSS en 1996. Alors, vous vous dites sûrement : comment faisait-on la mise en forme de 1991 à 1996 ? Eh bien, uniquement en HTML ! Il y avait en effet des balises HTML dédiées à la mise en forme, par exemple, permettait de définir la couleur du texte.
+
+Cependant, les pages HTML commençaient à devenir assez complexes. Il y avait de plus en plus de balises et c'était un joyeux mélange entre le fond et la forme, qui rendait la mise à jour des pages web de plus en plus complexe. C'est pour cela que l'on a créé le langage CSS.
+
+Cependant, le CSS n'a pas été adopté immédiatement par les webmasters, loin de là. Il fallait se défaire de certaines mauvaises habitudes et cela a pris du temps. Encore aujourd'hui, on peut trouver des sites web avec des balises HTML de mise en forme, anciennes et obsolètes, comme<font>!
+			    </p>
+			</article>    
+ 						<!--aside-->
+			<aside class="Formulaire"> 
+				<h3>Formulaire</h3>	  
+			<form action="traitement.php" method="post">
+				<fieldset>
+		    	<legend>Identité</legend>
+				<p>
+					<label for="name">Nom:</label>
+					<input type="text" name="Nom" id="Nom"  required />
+				</p>
+				<p>
+					<label for="Prenom">Prenom:</label>
+					<input type="text" name="Prenom" id="Prenom" required/>
+				</p>
+				<p>
+					<label for="naissance">Date de naissance</label>
+					<input type="Date" name="naissance" id="naissance" required />
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Coordonnées</legend>
+				<p>
+					<label for="telephone">Numero de telephone</label>
+					<input type="tel" name="telephone" id="telephone" required />
+				</p>
+				<p>Adresse</p>
+				<p>
+					<label for="rue">Rue n°</label>
+					<input type="number" name="rue" id="rue"/>
+				</p>
+				<p>
+					<label for="Adress">Nom de la rue</label>
+					<input type="text" name="Adresse" id="Adresse">
+				</p>
+				<p>
+					<label for="Adresse">BAT-ESC-APP</label>
+					<input type="text" name="Adresse" id="Adresse">
+				</p>
+				<p>
+					<label for="code">code pstale</label>
+					<input type="text" name="code" id="code">
+				</p>
+				<p>
+					<label for="ville">Ville</label>
+					<input type="text" name="ville" id="ville">
+				</p>
+				<p>
+					<label for="pays">votre pays</label>
+					<select name="pays" id="pays" />
+					    <option value="france">France</option>
+						<option value="italie">Italie</option>
+						<option value="canada">Canada</option>
+						<option value="Chine">China</option>
+					</select>
+				</p>
+				<p>
+					<label for="email">Adresse mail:</label>
+					<input type="email" name="user_mail" id="user_mail" required=/>
+				</p>
+				</fieldset>
+				<fieldset>
+					<legend>Message</legend>
+				<p>
+					<label for="message">Votre message:</label>
+					<textarea name="user_message" id="user_message" required></textarea>
+				</p>
+				</fieldset>
+				<div>
+				    <input type="submit" value="Envoyer" />
+				 </div>   	
+			</form>
+			<video controls>
+				<source src="islands.mp4" type="video/mp4">
+			</video>
+			<div>
+			<h3>les liens hypertext</h3>
+<p>pour plus de détail c'est <a href ="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens">ICI</a> ou <br/><a href ="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens"><img src = "Logo_OpenClassrooms.png" alt="cours sur openclassrooms" title ="cliquer sur le logo"/></a></p>
+            </div>
+			</aside>
+			</section> 
+						<!--pied de la page-->
+		<footer>
+			<ul id="Nav_pied">
+				<li class="contacte"><a href="">contacte</a></li>
+				<li class="a propos"><a href=""> a propos</a></li>
+				<li class="montions"><a href="">montions légales</a></li>
+			</ul>
+		</footer>
+
+</body>
+</html>
